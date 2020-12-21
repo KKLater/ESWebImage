@@ -25,7 +25,11 @@ public extension UIImageView {
         
         if let imageUrlString = handleBlock(self, needLoadImage) {
             let url = URL(string: imageUrlString)
-            sd_setImage(with: url, placeholderImage: placeholder, options: [.retryFailed, .allowInvalidSSLCertificates ], progress: progressBlock, completed: completedBlock)
+            print("image begain load")
+            sd_setImage(with: url, placeholderImage: placeholder, options: [.retryFailed, .allowInvalidSSLCertificates ], progress: progressBlock) { (image, error, type, url) in
+                print("image load end")
+                completedBlock?(image, error, type, url)
+            }
         }
         
     }
