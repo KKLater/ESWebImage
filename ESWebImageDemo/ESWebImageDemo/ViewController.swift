@@ -10,7 +10,6 @@ import UIKit
 class ViewController: UIViewController {
 
     var images = [String]()
-    var detail: DetailViewController?
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
@@ -41,10 +40,6 @@ class ViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         listView.reloadData()
-        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 5) {
-            self.detail = DetailViewController()
-            self.detail?.imageUrlString = self.images.first
-        }
     }
     
     override func viewDidLayoutSubviews() {
@@ -70,9 +65,9 @@ class ViewController: UIViewController {
 extension ViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let imageUrlStr = images[indexPath.row]
-        if let detail = detail {
-            present(detail, animated: true, completion: nil)
-        }
+        let detail = DetailViewController()
+        detail.imageUrlString = imageUrlStr
+        present(detail, animated: true, completion: nil)
     }
 }
 
