@@ -19,7 +19,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let windowScene = (scene as? UIWindowScene) else { return }
         UIImageView.initializeMethod()
-        ImageCache.clearDisk { }
+        ImageCache.clearDisk{}
 //        SDImageCache.shared.clear(with: .all, completion: nil)
         window = UIWindow(windowScene: windowScene)
         window?.backgroundColor = .white

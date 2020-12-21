@@ -18,8 +18,8 @@ public struct ImageManager {
                 imageView.needLoadImage = needLoadImage
                 return nil
             } else {
-                let width = roundf(Float(imageView.bounds.width) * Float(scale))
-                let height = roundf(Float(imageView.bounds.height) * Float(scale))
+                let width = lroundf(Float(imageView.bounds.width) * Float(scale))
+                let height = lroundf(Float(imageView.bounds.height) * Float(scale))
                 let imageUrlStr = "imageView2/1/w/\(width)/h/\(height)"
                 return imageUrlString.urlString(for: imageUrlStr)
             }
