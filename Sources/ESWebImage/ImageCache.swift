@@ -10,20 +10,20 @@ import SDWebImage
 
 public struct ImageCache {
     
-    static func totalDiskSize() -> UInt {
+    public static func totalDiskSize() -> UInt {
         return SDImageCache.shared.totalDiskSize()
     }
     
-    static func totalDiskSizeDescription() -> String {
+    public static func totalDiskSizeDescription() -> String {
         let size = totalDiskSize() / 1024 / 1024
         return "\(size) MB"
     }
     
-    static func clearDisk(_ completion: @escaping () -> ()) {
+    public static func clearDisk(_ completion: @escaping () -> ()) {
         SDImageCache.shared.clearDisk(onCompletion: completion)
     }
     
-    static func clearMemory() {
+    public static func clearMemory() {
         SDImageCache.shared.clearMemory()
     }
     
