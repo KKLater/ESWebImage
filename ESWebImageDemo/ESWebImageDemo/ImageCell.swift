@@ -34,15 +34,17 @@ class ImageCell: UITableViewCell {
     }
     
     override func layoutSubviews() {
+        print("cell begain layout")
         super.layoutSubviews()
+        print("cell end layout")
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    lazy var imgView: UIImageView =  {
-        let imageView = UIImageView()
+    lazy var imgView: TestImageView =  {
+        let imageView = TestImageView()
         return imageView
     }()
 }

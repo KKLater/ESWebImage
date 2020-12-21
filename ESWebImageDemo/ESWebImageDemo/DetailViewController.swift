@@ -14,6 +14,7 @@ class DetailViewController: UIViewController {
     var imageUrlString: String? {
         didSet {
             if let imgUrl = imageUrlString {
+                print("detail begain set image url")
                 self.imageView.loadImage(with: imgUrl)
             }
         }

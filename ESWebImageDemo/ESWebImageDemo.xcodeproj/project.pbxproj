@@ -17,6 +17,7 @@
 		1A896C952590EAF700757EF0 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A896C942590EAF600757EF0 /* DetailViewController.swift */; };
 		1A896C982590EB3E00757EF0 /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A896C972590EB3E00757EF0 /* ImageCell.swift */; };
 		1A896C9C2590EB6E00757EF0 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 1A896C9B2590EB6E00757EF0 /* SnapKit */; };
+		1A896C9F2590F0D700757EF0 /* TestImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A896C9E2590F0D700757EF0 /* TestImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		1A896C892590E9FE00757EF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1A896C942590EAF600757EF0 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		1A896C972590EB3E00757EF0 /* ImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
+		1A896C9E2590F0D700757EF0 /* TestImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				1A896C7F2590E9FD00757EF0 /* ViewController.swift */,
 				1A896C942590EAF600757EF0 /* DetailViewController.swift */,
 				1A896C972590EB3E00757EF0 /* ImageCell.swift */,
+				1A896C9E2590F0D700757EF0 /* TestImageView.swift */,
 				1A896C812590E9FD00757EF0 /* Main.storyboard */,
 				1A896C842590E9FE00757EF0 /* Assets.xcassets */,
 				1A896C862590E9FE00757EF0 /* LaunchScreen.storyboard */,
@@ -159,6 +162,7 @@
 				1A896C7C2590E9FD00757EF0 /* AppDelegate.swift in Sources */,
 				1A896C7E2590E9FD00757EF0 /* SceneDelegate.swift in Sources */,
 				1A896C952590EAF700757EF0 /* DetailViewController.swift in Sources */,
+				1A896C9F2590F0D700757EF0 /* TestImageView.swift in Sources */,
 				1A896C982590EB3E00757EF0 /* ImageCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

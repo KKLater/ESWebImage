@@ -70,8 +70,6 @@ class ViewController: UIViewController {
 extension ViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let imageUrlStr = images[indexPath.row]
-//        let detail = DetailViewController()
-//        detail.imageUrlString = imageUrlStr
         if let detail = detail {
             present(detail, animated: true, completion: nil)
         }
@@ -91,6 +89,7 @@ extension ViewController: UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: NSStringFromClass(ImageCell.classForCoder()), for: indexPath) as!  ImageCell
         cell.contentView.backgroundColor = .white
         let imageUrlStr = images[indexPath.row]
+        print("cell lazy load begin")
         cell.imgView.loadImage(with: imageUrlStr)
     
         return cell
